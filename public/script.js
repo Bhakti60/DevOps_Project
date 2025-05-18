@@ -1,4 +1,4 @@
-// Reveal elements on scroll
+// Reveal on scroll
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
