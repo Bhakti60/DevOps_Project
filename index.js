@@ -7,4 +7,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.listen(PORT, () => {
   console.log(`Portfolio running at http://localhost:${PORT}`);
+app.listen(3000, '0.0.0.0', () => {
+    console.log('Server running on port 3000');
+  });
+  
 });
