@@ -60,7 +60,7 @@ body {
   
   /* Cards for sections */
   .card {
-    background: white;
+    background: rgb(85, 158, 222);
     border-radius: 12px;
     padding: 2rem;
     margin-bottom: 2rem;
