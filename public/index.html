@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhakti Mejari | DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Hi, I'm Jane Doe</h1>
-    <p>Web Developer & Designer</p>
+    <div class="container">
+      <h1>Bhakti Mejari</h1>
+      <p>DevOps Engineer | AWS | Kubernetes | CI/CD | Monitoring</p>
+      <div class="social-links">
+        <a href="mailto:bhaktimejari22@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/bhaktimejari" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Bhakti60" target="_blank">GitHub</a>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I create web apps with clean code and great UX.</p>
+  <main class="container">
+    <section id="summary" class="animate">
+      <h2>Summary</h2>
+      <p>DevOps Engineer with 1+ years of experience in AWS, Kubernetes, Linux, Jenkins, and CI/CD. Skilled at building scalable, automated infrastructure with a focus on reliability, performance, and collaboration.</p>
     </section>
 
-    <section>
-      <h2>Projects</h2>
+    <section id="skills" class="animate">
+      <h2>Technical Skills</h2>
       <ul>
-        <li>📝 Portfolio Website</li>
-        <li>🛒 E-commerce App</li>
+        <li><strong>Languages:</strong> Java, Python, HTML/CSS, SQL</li>
+        <li><strong>Tools:</strong> Git, GitHub, GitLab, Docker, Kubernetes, Jenkins, GitHub Actions</li>
+        <li><strong>Cloud & Infra:</strong> AWS, Azure, Terraform</li>
+        <li><strong>Monitoring:</strong> ELK Stack, Prometheus, Grafana</li>
+        <li><strong>Others:</strong> Linux, Maven, Kafka, CI/CD, Scripting, Incident Management</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <button onclick="showEmail()">Click to Show Email</button>
-      <p id="email" style="display: none;">jane@example.com</p>
+    <section id="experience" class="animate">
+      <h2>Work Experience</h2>
+      <h3>DevOps Engineer — Jio <span>(Jan 2024 – Present)</span></h3>
+      <ul>
+        <li>Managed Spark clusters on Kubernetes, improving resource use by 30% and ensuring 99.9% uptime.</li>
+        <li>Reduced Spark job failures by 25% and improved processing speed by 40%.</li>
+        <li>Streamlined CI/CD pipelines, reducing deployment time by 35%.</li>
+        <li>Resolved OOM issues and improved system reliability with better memory optimization.</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="animate">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>CI/CD Pipeline for Dockerized App</h3>
+        <p>Automated Docker image builds via GitHub Actions and deployed using Nginx reverse proxy to EC2 with zero downtime.</p>
+      </div>
+      <div class="project">
+        <h3>Centralized Logging & Monitoring</h3>
+        <p>Set up ELK stack with dynamic Kibana dashboards and alerting system. Integrated AWS S3 for scalable log storage and retrieval.</p>
+      </div>
+    </section>
+
+    <section id="education" class="animate">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.E. in Information Technology</strong>, Datta Meghe College of Engineering, CGPA 8.84 (2019–2023)</li>
+        <li><strong>Diploma in IT</strong>, Government Polytechnic, 90% (2017–2020)</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Jane Doe</p>
+    <p>&copy; 2025 Bhakti Mejari. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

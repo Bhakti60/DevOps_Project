@@ -1,29 +1,104 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
     color: #333;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
   header {
-    background: #333;
-    color: rgb(31, 73, 212);
-    padding: 2rem;
+    background: #1e293b;
+    color: #fff;
     text-align: center;
+    padding: 3rem 1rem;
+    animation: slideFade 1s ease-in-out;
   }
-  main {
-    padding: 2rem;
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
   }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  .social-links a {
+    color: #60a5fa;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #2563eb;
+    transform: scale(1.1);
+  }
+  
+  h2 {
+    color: #1e40af;
+    margin-top: 2rem;
+  }
+  
   section {
     margin-bottom: 2rem;
   }
-  button {
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+  
+  ul {
+    list-style: disc inside;
+    line-height: 1.6;
   }
+  
+  .project {
+    background: #f1f5f9;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-left: 4px solid #3b82f6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
   footer {
     text-align: center;
+    background: #1e293b;
+    color: white;
     padding: 1rem;
-    background: #222;
-    color: #ccc;
+    margin-top: 2rem;
+  }
+  
+  /* Hero animation */
+  @keyframes slideFade {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Scroll-based animation */
+  .animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .animate.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
   
